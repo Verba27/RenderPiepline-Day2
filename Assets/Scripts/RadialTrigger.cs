@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -16,7 +13,7 @@ public class RadialTrigger : MonoBehaviour
         Gizmos.DrawRay(transform.position, vectorToTarget.normalized);
         Handles.color = Color.green;
         
-        var dist = Mathf.Sqrt(Mathf.Pow(vectorToTarget.x, 2) + Mathf.Pow(vectorToTarget.y, 2));
+        var dist = Mathf.Sqrt(Mathf.Pow(vectorToTarget.x, 2) + Mathf.Pow(vectorToTarget.y,2));
         if ( dist < radius)
         {
             Handles.color = Color.red;
