@@ -11,7 +11,6 @@ public class DirectionTrigger : MonoBehaviour
     {
         Vector3 vectorToTarget = targetPoint.position - transform.position;
         var check = Vector3.Dot(transform.right, vectorToTarget.normalized);
-
         Gizmos.color = Color.green;
 
         if (check > threshold)
